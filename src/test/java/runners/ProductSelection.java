@@ -1,5 +1,5 @@
 /**
- * ÿAutor: Jhon Sebastian Ramos Muñoz
+ * @Autor: Jhon Sebastian Ramos Muñoz
  * */
 
 package runners;
