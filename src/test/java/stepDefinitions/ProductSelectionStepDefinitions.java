@@ -32,11 +32,11 @@ public class ProductSelectionStepDefinitions {
         OnStage.theActorCalled("sebastian");
     }
 
-    @Given("^el usuario se encuentra en la aplicacion (.*)$")
+    @Given("^el usuario se encuentra en la aplicacion https://www\\.linio\\.com\\.co/$")
     public void elUsuarioSeEncuentraEnLaAplicacionHttpsWwwLinioComCo() {
         theActorInTheSpotlight().wasAbleTo(OpenBrowser.on(page));
-
     }
+
 
     @When("^el usuario ingresa a la seccion colchones de la categoria Hogar y selecciona un producto con el carrito$")
     public void elUsuarioIngresaALaSeccionColchonesDeLaCategoriaHogarYSeleccionaUnProductoConElCarrito() {
