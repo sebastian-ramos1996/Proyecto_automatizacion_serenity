@@ -1,3 +1,7 @@
+
+# Autor: Jhon Sebastian Ramos Muñoz
+
+
 Feature: seleccionar un producto de la seccion colchones en la categoria Hogar de la aplicacion Linio.com.co
   Yo como usuario de la aplicacion Linio.com.co
   necesito seleccionar un producto de la seccion colchones de la categoria Hogar por medio

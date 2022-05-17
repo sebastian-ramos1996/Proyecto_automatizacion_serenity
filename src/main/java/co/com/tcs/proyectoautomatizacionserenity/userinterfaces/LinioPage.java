@@ -1,3 +1,7 @@
+/**
+ * @Autor: Jhon Sebastian Ramos Muñoz
+ * */
+
 package co.com.tcs.proyectoautomatizacionserenity.userinterfaces;
 
 import net.serenitybdd.core.pages.PageObject;
