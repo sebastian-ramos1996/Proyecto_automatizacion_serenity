@@ -1,6 +1,8 @@
 package stepDefinitions;
 
 import co.com.tcs.proyectoautomatizacionserenity.interactions.OpenBrowser;
+import co.com.tcs.proyectoautomatizacionserenity.tasks.BorrarDelCarrito;
+import co.com.tcs.proyectoautomatizacionserenity.tasks.SeleccionarProducto;
 import co.com.tcs.proyectoautomatizacionserenity.userinterfaces.LinioPage;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -28,11 +30,13 @@ public class ProductSelectionStepDefinitions {
 
     @When("^el usuario ingresa a la seccion colchones de la categoria Hogar y selecciona un producto con el carrito$")
     public void elUsuarioIngresaALaSeccionColchonesDeLaCategoriaHogarYSeleccionaUnProductoConElCarrito() {
+        theActorInTheSpotlight().attemptsTo(SeleccionarProducto.seleccionDelProducto());
 
     }
 
     @When("^el usuario elimina el producto seleccionado del carrito$")
     public void elUsuarioEliminaElProductoSeleccionadoDelCarrito() {
+        theActorInTheSpotlight().attemptsTo(BorrarDelCarrito.borrarProducoDelCarrito());
 
     }
 

@@ -6,6 +6,7 @@ import co.com.tcs.proyectoautomatizacionserenity.userinterfaces.IndexPage;
 import co.com.tcs.proyectoautomatizacionserenity.userinterfaces.ProductoPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 public class BorrarDelCarrito implements Task {
@@ -21,5 +22,10 @@ public class BorrarDelCarrito implements Task {
                 Click.on(ProductoPage.ANIADIR_BUTTON),
                 Click.on(ProductoPage.IR_CARRITO_BUTTON),
                 Click.on(CarritoPage.ELIMINAR_BUTTON));
+    }
+
+    public static BorrarDelCarrito borrarProducoDelCarrito(){
+        return Tasks.instrumented(BorrarDelCarrito.class);
+
     }
 }

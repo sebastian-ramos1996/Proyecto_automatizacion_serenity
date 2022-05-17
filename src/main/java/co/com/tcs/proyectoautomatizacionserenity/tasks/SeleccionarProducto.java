@@ -5,6 +5,7 @@ import co.com.tcs.proyectoautomatizacionserenity.userinterfaces.IndexPage;
 import co.com.tcs.proyectoautomatizacionserenity.userinterfaces.ProductoPage;
 import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.Task;
+import net.serenitybdd.screenplay.Tasks;
 import net.serenitybdd.screenplay.actions.Click;
 
 public class SeleccionarProducto implements Task {
@@ -20,5 +21,9 @@ public class SeleccionarProducto implements Task {
                 Click.on(ProductoPage.ANIADIR_BUTTON),
                 Click.on(ProductoPage.IR_CARRITO_BUTTON));
 
+    }
+
+    public static SeleccionarProducto seleccionDelProducto(){
+        return Tasks.instrumented(SeleccionarProducto.class);
     }
 }
