@@ -11,7 +11,10 @@ import net.serenitybdd.screenplay.Question;
 public class IsValidAmountProduct implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
-        return CarritoPage.PRODUCT_CANTIDAD.resolveAllFor(actor).get(0).getText();
+
+        String cantidadProducto = CarritoPage.PRODUCT_CANTIDAD.resolveAllFor(actor).get(0).getText();
+        System.out.println(cantidadProducto);
+        return cantidadProducto;
     }
 
     public static IsValidAmountProduct isValidAmountOfProductSelection(){

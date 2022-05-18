@@ -11,7 +11,9 @@ import net.serenitybdd.screenplay.Question;
 public class IsValidClearCarrito implements Question<String> {
     @Override
     public String answeredBy(Actor actor) {
-        return CarritoPage.CONFIRMATION_MESSAGE.resolveAllFor(actor).get(0).getText();
+        String message = CarritoPage.CONFIRMATION_MESSAGE.resolveAllFor(actor).get(0).getText();
+        System.out.println(message);
+        return message;
     }
 
     public static IsValidClearCarrito isValidMessageOfClearCarrito(){

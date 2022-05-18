@@ -12,7 +12,10 @@ public class IsValidValueProduct implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
-        return CarritoPage.PRODUCT_VALUE.resolveAllFor(actor).get(0).getText();
+
+        String valorProducto=CarritoPage.PRODUCT_VALUE.resolveAllFor(actor).get(0).getText();
+        System.out.println(valorProducto);
+        return valorProducto;
     }
 
     public static IsValidValueProduct IsValidValueOfProductSelection(){

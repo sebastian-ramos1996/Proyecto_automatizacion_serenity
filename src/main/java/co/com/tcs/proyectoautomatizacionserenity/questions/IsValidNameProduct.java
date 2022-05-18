@@ -12,7 +12,10 @@ public class IsValidNameProduct implements Question<String> {
 
     @Override
     public String answeredBy(Actor actor) {
-        return CarritoPage.PRODUCT_NAME.resolveAllFor(actor).get(0).getText();
+
+        String nombreProducto = CarritoPage.PRODUCT_NAME.resolveAllFor(actor).get(0).getText();
+        System.out.println(nombreProducto);
+        return nombreProducto;
     }
 
     public static IsValidNameProduct isValidNameOfProductSelection(){

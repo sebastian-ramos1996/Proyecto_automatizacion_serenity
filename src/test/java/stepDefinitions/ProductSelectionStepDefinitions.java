@@ -44,12 +44,6 @@ public class ProductSelectionStepDefinitions {
 
     }
 
-    @When("^el usuario elimina el producto seleccionado del carrito$")
-    public void elUsuarioEliminaElProductoSeleccionadoDelCarrito() {
-        theActorInTheSpotlight().attemptsTo(BorrarDelCarrito.borrarProducoDelCarrito());
-
-    }
-
     @Then("^el usuario ve el (.*), (.*) y (.*) en el carrito$")
     public void elUsuarioVeElSuperMegaComboAzulQueenXResortadoMarshallY$EnElCarrito(String producto, String cantidad, String valor) {
         theActorInTheSpotlight().should(seeThat(IsValidNameProduct.isValidNameOfProductSelection(),
@@ -61,8 +55,14 @@ public class ProductSelectionStepDefinitions {
 
     }
 
-    @Then("^ve el mensaje (.*)$")
-    public void veElMensajeNOTIENESPRODUCTOSENTUCARRITO(String mensaje) {
+    @When("^el usuario ingresa a la seccion colchones de la categoria Hogar, selecciona un producto con el carrito y despues lo elimina$")
+    public void elUsuarioIngresaALaSeccionColchonesDeLaCategoriaHogarSeleccionaUnProductoConElCarritoYDespuesLoElimina() {
+        theActorInTheSpotlight().attemptsTo(BorrarDelCarrito.borrarProducoDelCarrito());
+
+    }
+
+    @Then("^el usuario ve el mensaje (.*)$")
+    public void elUsuarioVeElMensajeNOTIENESPRODUCTOSENTUCARRITO(String mensaje) {
         theActorInTheSpotlight().should(seeThat(IsValidClearCarrito.isValidMessageOfClearCarrito(),
                 Matchers.equalTo(mensaje)));
 

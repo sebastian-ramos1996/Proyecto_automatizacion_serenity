@@ -25,6 +25,7 @@ public class SeleccionarProducto implements Task {
                 Click.on(ProductoPage.ANIADIR_BUTTON),
                 Click.on(ProductoPage.IR_CARRITO_BUTTON));
 
+
     }
 
     public static SeleccionarProducto seleccionDelProducto(){
