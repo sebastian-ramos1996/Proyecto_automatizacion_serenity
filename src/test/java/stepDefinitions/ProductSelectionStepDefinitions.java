@@ -50,7 +50,7 @@ public class ProductSelectionStepDefinitions {
 
     }
 
-    @Then("^el usuario ve el Super (.*), (.*) y (.*) en el carrito$")
+    @Then("^el usuario ve el (.*), (.*) y (.*) en el carrito$")
     public void elUsuarioVeElSuperMegaComboAzulQueenXResortadoMarshallY$EnElCarrito(String producto, String cantidad, String valor) {
         theActorInTheSpotlight().should(seeThat(IsValidNameProduct.isValidNameOfProductSelection(),
                 Matchers.equalTo(producto)));
