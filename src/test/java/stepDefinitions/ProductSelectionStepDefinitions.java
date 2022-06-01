@@ -57,7 +57,7 @@ public class ProductSelectionStepDefinitions {
 
     @When("^el usuario ingresa a la seccion colchones de la categoria Hogar, selecciona un producto con el carrito y despues lo elimina$")
     public void elUsuarioIngresaALaSeccionColchonesDeLaCategoriaHogarSeleccionaUnProductoConElCarritoYDespuesLoElimina() {
-        theActorInTheSpotlight().attemptsTo(BorrarDelCarrito.borrarProducoDelCarrito());
+        theActorInTheSpotlight().attemptsTo(BorrarDelCarrito.borrarProductoDelCarrito());
 
     }
 

@@ -19,7 +19,7 @@ public class BorrarDelCarrito implements Task {
         actor.attemptsTo(
                 Click.on(IndexPage.CATEGORIA_BUTTON),
                 Click.on(IndexPage.HOGAR_BUTTON),
-               Click.on(HogarPage.COLCHONES_BASE_CAMAS_BUTTON),
+                Click.on(HogarPage.COLCHONES_BASE_CAMAS_BUTTON),
                 Click.on(HogarPage.COLCHONES_BUTTON),
                 Click.on(HogarPage.PRODUCTO_BUTTON),
                 Click.on(ProductoPage.CANTIDAD_BUTTON),
@@ -29,7 +29,7 @@ public class BorrarDelCarrito implements Task {
                 Click.on(CarritoPage.ELIMINAR_BUTTON));
     }
 
-    public static BorrarDelCarrito borrarProducoDelCarrito(){
+    public static BorrarDelCarrito borrarProductoDelCarrito(){
         return Tasks.instrumented(BorrarDelCarrito.class);
 
     }
